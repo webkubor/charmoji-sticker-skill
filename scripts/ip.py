@@ -558,7 +558,7 @@ def cmd_sync(args):
             f.write(".DS_Store\n")
         with open(os.path.join(HOME, "README.md"), "w", encoding="utf-8") as f:
             f.write("# 微信表情形象库（私有）\n\n"
-                    "由 wechat-sticker-submit skill 的 `ip.py` 维护，存放表情形象的母版资产：\n\n"
+                    "由 charmoji skill 的 `ip.py` 维护，存放表情形象的母版资产：\n\n"
                     "- `ips/<形象名>/ip.png` —— 正面照母版，出图垫图用这张\n"
                     "- `ips/<形象名>/ip-reverse.txt` —— 读图逆向的英文 prompt，一个形象只读一次\n"
                     "- `ips/<形象名>/形象头像-*.png` / `形象图标-*.png` —— 形象主页用（240×240 / 50×50，透明）\n"
@@ -575,7 +575,7 @@ def cmd_sync(args):
                 return 1
             print("▶ 在 GitLab 创建私有仓库 wechat-sticker-ips ...")
             r = subprocess.run(["glab", "repo", "create", "wechat-sticker-ips", "--private",
-                                "--description", "微信表情形象库（母版资产，由 wechat-sticker-submit skill 维护）",
+                                "--description", "微信表情形象库（母版资产，由 charmoji skill 维护）",
                                 "--defaultBranch", "main"],
                                capture_output=True, text=True)
             out = (r.stdout + r.stderr).strip()

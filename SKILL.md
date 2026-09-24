@@ -1,5 +1,5 @@
 ---
-name: wechat-sticker-submit
+name: charmoji
 description: 微信表情开放平台静态表情投稿全流程 SOP —— 一张 IP 正面照进，整套可提交素材出。覆盖 IP 命名与简介文案、9 情绪选题、museav 中台批量出图、240×240 表情图 / 750×400 详情页横幅 / 240×240 封面 / 50×50 聊天面板图标切图、透明背景与白描边机检、含义词字数校验、赞赏三件套、付费表情（10 微信豆）、审核红线与高频拒因；上架后还能一条命令出 1080×1920 竖版推广视频（合成走 reel-kit）。触发词：微信表情、表情包、表情专辑、表情投稿、提交表情、表情形象、微信表情开放平台、sticker、表情审核、含义词、赞赏引导图、付费表情、微信豆、表情封面、聊天面板图标、表情推广视频、表情包宣传片、表情串成视频。
 metadata:
   version: "1.3.0"
@@ -18,7 +18,7 @@ metadata:
 两者不能混在同一套专辑里 —— 官方要求同套统一动/静。视频号特效规范见 `references/specs.md` 第三节。
 
 ```
-SKILL_DIR=~/.claude/skills/wechat-sticker-submit
+SKILL_DIR=~/.claude/skills/charmoji
 ```
 
 ## 数据模型：形象唯一，系列多套
@@ -72,7 +72,7 @@ SKILL_DIR=~/.claude/skills/wechat-sticker-submit
 指向 `albums/` 的软链，Finder 里照样浏览。可用 `STICKER_HOME` / `STICKER_ALBUMS` 覆盖。
 
 **代码也只有一份**：这个 skill 目录本身就是 git 仓库
-（`github.com/webkubor/wechat-sticker-submit`），`~/dev/github/agent/wechat-sticker-submit`
+（`github.com/webkubor/charmoji`），`~/dev/github/agent/charmoji`
 是指向它的软链。早先是两份副本靠手动 rsync 同步，结果漂了 8 个文件才发现。
 ⚠️ Claude Code **不跟随 symlink 加载 skill**，所以真目录必须在 `~/.claude/skills/` 下，
 反过来做会导致 skill 直接消失。

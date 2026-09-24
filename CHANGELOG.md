@@ -1,5 +1,27 @@
 # Changelog
 
+## 2.0.0 (2026-09-24)
+
+### 改名:`wechat-sticker-submit` → `charmoji` —— 商业化起步
+
+名字带 `wechat` 是 Tencent 注册商标,直接挂在产品名上有商标风险 + 误以为是官方工具。
+`charmoji` = char(角色 IP) + moji(替它说的话),把"表情包是替 IP 说话"这件事压进品牌。
+
+| 维度 | 旧 | 新 |
+|---|---|---|
+| 仓库名 | webkubor/wechat-sticker-submit | webkubor/charmoji |
+| 本地目录 | `~/.claude/skills/wechat-sticker-submit/` | `~/.claude/skills/charmoji/` |
+| 项目简介里的平台 | 不变 | 不变(还是提交到微信表情开放平台,功能对象没换) |
+| 商标化潜力 | 低(被人持牌) | 高(charmoji 可注册商标 + charmoji.com/io/ai 域名可拿) |
+
+兼容性:
+- 旧仓库 URL 会自动 301 重定向到 charmoji
+- `~/.claude/skills/wechat-sticker-submit` 留作软链指向 charmoji(避免用户机器启动报错)
+
+GitHub 上 star 数会从 `wechat-sticker-submit` 转移到 `charmoji`(GitHub rename 自动保留)。
+
+---
+
 ## 1.3.0 (2026-08-28)
 
 ### 把 reel-kit 关联进主流程与触发词

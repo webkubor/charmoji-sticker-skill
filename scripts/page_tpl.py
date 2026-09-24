@@ -186,5 +186,5 @@ def render(ips, albums_root, stamp):
 <tr><td>赞赏引导图</td><td class="n">1</td><td>PNG/GIF</td><td class="n">750×560</td><td class="n">≤500KB</td><td>不透明，仅开赞赏时需要</td></tr>
 <tr><td>赞赏致谢图</td><td class="n">1</td><td>PNG/GIF</td><td class="n">750×750</td><td class="n">≤500KB</td><td>不透明，仅开赞赏时需要</td></tr>
 </table></div></div>
-<footer>由 wechat-sticker-submit skill 的 <code>ip.py page</code> 生成 · 数字以官方文档为准</footer></div>''')
+<footer>由 charmoji skill 的 <code>ip.py page</code> 生成 · 数字以官方文档为准</footer></div>''')
     return "\n".join(out)

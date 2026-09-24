@@ -1,4 +1,4 @@
-# wechat-sticker-submit
+# charmoji
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Claude Code Skill](https://img.shields.io/badge/Claude%20Code-Skill-d97757)](https://claude.com/claude-code)
@@ -6,7 +6,7 @@
 [![Deps: Pillow only](https://img.shields.io/badge/Deps-Pillow%20only-2ea44f)](https://python-pillow.org/)
 [![Static + animated](https://img.shields.io/badge/static+%20animated-supported-2ea44f)](references/animated.md)
 [![Spec synced](https://img.shields.io/badge/Spec%20synced-2026--08--27-orange)](https://sticker.weixin.qq.com/cgi-bin/mmemoticon-bin/readtemplate?t=guide/index.html#/makingSpecifications)
-[![Stars](https://img.shields.io/github/stars/webkubor/wechat-sticker-submit?style=flat&color=yellow)](https://github.com/webkubor/wechat-sticker-submit/stargazers)
+[![Stars](https://img.shields.io/github/stars/webkubor/charmoji?style=flat&color=yellow)](https://github.com/webkubor/charmoji/stargazers)
 [![Promo video: reel-kit](https://img.shields.io/badge/promo%20video-reel--kit-8b5cf6)](https://github.com/webkubor/reel-kit)
 [![Version](https://img.shields.io/badge/version-1.3.0-blue)](CHANGELOG.md)
 
@@ -90,8 +90,8 @@ GIF only supports 1-bit transparency (each pixel is fully transparent or fully o
 ## Install
 
 ```bash
-git clone https://github.com/webkubor/wechat-sticker-submit.git \
-  ~/.claude/skills/wechat-sticker-submit
+git clone https://github.com/webkubor/charmoji.git \
+  ~/.claude/skills/charmoji
 ```
 
 After install, say "help me make a set of WeChat stickers" in Claude Code to trigger; can also be used purely as a CLI tool.
@@ -129,7 +129,7 @@ Backing up only outputs would lose the truly precious things (originals you can'
 ## IP library
 
 ```bash
-S=~/.claude/skills/wechat-sticker-submit/scripts
+S=~/.claude/skills/charmoji/scripts
 
 python3 $S/ip.py add Tuanzi frontal-photo.png --desc "Bio, ≤80 chars" --source art-pool/
 python3 $S/ip.py list                    # all characters + series + completion progress

@@ -1,4 +1,4 @@
-# wechat-sticker-submit
+# charmoji
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Claude Code Skill](https://img.shields.io/badge/Claude%20Code-Skill-d97757)](https://claude.com/claude-code)
@@ -6,7 +6,7 @@
 [![Deps: Pillow only](https://img.shields.io/badge/Deps-Pillow%20only-2ea44f)](https://python-pillow.org/)
 [![静态 + 动态](https://img.shields.io/badge/%E9%9D%99%E6%80%81-%E5%B7%B2%E6%94%B6%E6%95%9B-2ea44f)](references/animated.md)
 [![官方规范同步](https://img.shields.io/badge/%E5%AE%98%E6%96%B9%E8%A7%84%E8%8C%83%E5%90%8C%E6%AD%A5-2026--08--27-orange)](https://sticker.weixin.qq.com/cgi-bin/mmemoticon-bin/readtemplate?t=guide/index.html#/makingSpecifications)
-[![Stars](https://img.shields.io/github/stars/webkubor/wechat-sticker-submit?style=flat&color=yellow)](https://github.com/webkubor/wechat-sticker-submit/stargazers)
+[![Stars](https://img.shields.io/github/stars/webkubor/charmoji?style=flat&color=yellow)](https://github.com/webkubor/charmoji/stargazers)
 [![出片: reel-kit](https://img.shields.io/badge/%E5%87%BA%E7%89%87-reel--kit-8b5cf6)](https://github.com/webkubor/reel-kit)
 [![版本](https://img.shields.io/badge/version-1.3.0-blue)](CHANGELOG.md)
 
@@ -103,8 +103,8 @@ GIF 只有 1-bit 透明（每像素要么全透明要么全不透明），半透
 ## 安装
 
 ```bash
-git clone https://github.com/webkubor/wechat-sticker-submit.git \
-  ~/.claude/skills/wechat-sticker-submit
+git clone https://github.com/webkubor/charmoji.git \
+  ~/.claude/skills/charmoji
 ```
 
 装完在 Claude Code 里说「帮我做一套微信表情」即可触发；也可以只当命令行工具用。
@@ -143,7 +143,7 @@ git clone https://github.com/webkubor/wechat-sticker-submit.git \
 ## IP 库
 
 ```bash
-S=~/.claude/skills/wechat-sticker-submit/scripts
+S=~/.claude/skills/charmoji/scripts
 
 python3 $S/ip.py add 团子 正面照.png --desc "简介，≤80 字" --source 画稿目录/
 python3 $S/ip.py list                    # 所有形象 + 系列 + 完善进度
