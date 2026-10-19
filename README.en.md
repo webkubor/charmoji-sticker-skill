@@ -14,6 +14,12 @@
 
 [中文](./README.md)
 
+**`charmoji` is an installable Claude Code skill** — the `name` in `SKILL.md` frontmatter is
+`charmoji`, same as the repo name. Clone it into `~/.claude/skills/` and Claude Code picks it up;
+say "help me make a set of WeChat stickers" to trigger. Commands and deps: see [Install](#install).
+
+The name is `char` (character IP) + `moji` (what it says for you): stickers speak for the character — [source](CHANGELOG.md).
+
 WeChat sticker open platform's submission bar isn't about art — it's about specs: 240×240 sticker images, 750×400 banner, transparent-background cover and icon, ≤4-char meaning words with no duplicates …
 
 And the platform **does NOT reject or error on out-of-spec assets — it silently compresses and crops** — by the time you spot your subject got cropped off, the work is lost.
