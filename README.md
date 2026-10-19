@@ -6,14 +6,15 @@
 [![Deps: Pillow only](https://img.shields.io/badge/Deps-Pillow%20only-2ea44f)](https://python-pillow.org/)
 [![静态 + 动态](https://img.shields.io/badge/%E9%9D%99%E6%80%81-%E5%B7%B2%E6%94%B6%E6%95%9B-2ea44f)](references/animated.md)
 [![官方规范同步](https://img.shields.io/badge/%E5%AE%98%E6%96%B9%E8%A7%84%E8%8C%83%E5%90%8C%E6%AD%A5-2026--08--27-orange)](https://sticker.weixin.qq.com/cgi-bin/mmemoticon-bin/readtemplate?t=guide/index.html#/makingSpecifications)
-[![Stars](https://img.shields.io/github/stars/webkubor/charmoji?style=flat&color=yellow)](https://github.com/webkubor/charmoji/stargazers)
+[![Stars](https://img.shields.io/github/stars/webkubor/charmoji-sticker-skill?style=flat&color=yellow)](https://github.com/webkubor/charmoji-sticker-skill/stargazers)
 [![出片: reel-kit](https://img.shields.io/badge/%E5%87%BA%E7%89%87-reel--kit-8b5cf6)](https://github.com/webkubor/reel-kit)
 [![版本](https://img.shields.io/badge/version-1.3.0-blue)](CHANGELOG.md)
 
 **一张 IP 正面照，出一整套能直接提交的微信表情素材。**
 
-**`charmoji` 是一个可安装的 Claude Code skill** —— `SKILL.md` frontmatter 里的 `name` 就是
-`charmoji`，与仓库名一致。clone 进 `~/.claude/skills/` 后被 Claude Code 识别，说一句「帮我做一套
+**`charmoji` 是一个可安装的 Claude Code skill** —— 仓库名 `charmoji-sticker-skill`，
+`SKILL.md` frontmatter 里的 `name` 是 `charmoji`（skill 名与仓库名不必相同，Claude Code 只认
+frontmatter 的 `name`）。clone 进 `~/.claude/skills/` 后被 Claude Code 识别，说一句「帮我做一套
 微信表情」即触发全流程；命令与依赖见[「安装」](#安装)。
 
 名字是 `char`（角色 IP）+ `moji`（替它说的话）：表情包是替 IP 说话 —— [出处](CHANGELOG.md)。
@@ -109,7 +110,7 @@ GIF 只有 1-bit 透明（每像素要么全透明要么全不透明），半透
 ## 安装
 
 ```bash
-git clone https://github.com/webkubor/charmoji.git \
+git clone https://github.com/webkubor/charmoji-sticker-skill.git \
   ~/.claude/skills/charmoji
 ```
 

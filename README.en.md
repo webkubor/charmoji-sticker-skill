@@ -6,7 +6,7 @@
 [![Deps: Pillow only](https://img.shields.io/badge/Deps-Pillow%20only-2ea44f)](https://python-pillow.org/)
 [![Static + animated](https://img.shields.io/badge/static+%20animated-supported-2ea44f)](references/animated.md)
 [![Spec synced](https://img.shields.io/badge/Spec%20synced-2026--08--27-orange)](https://sticker.weixin.qq.com/cgi-bin/mmemoticon-bin/readtemplate?t=guide/index.html#/makingSpecifications)
-[![Stars](https://img.shields.io/github/stars/webkubor/charmoji?style=flat&color=yellow)](https://github.com/webkubor/charmoji/stargazers)
+[![Stars](https://img.shields.io/github/stars/webkubor/charmoji-sticker-skill?style=flat&color=yellow)](https://github.com/webkubor/charmoji-sticker-skill/stargazers)
 [![Promo video: reel-kit](https://img.shields.io/badge/promo%20video-reel--kit-8b5cf6)](https://github.com/webkubor/reel-kit)
 [![Version](https://img.shields.io/badge/version-1.3.0-blue)](CHANGELOG.md)
 
@@ -14,9 +14,11 @@
 
 [中文](./README.md)
 
-**`charmoji` is an installable Claude Code skill** — the `name` in `SKILL.md` frontmatter is
-`charmoji`, same as the repo name. Clone it into `~/.claude/skills/` and Claude Code picks it up;
-say "help me make a set of WeChat stickers" to trigger. Commands and deps: see [Install](#install).
+**`charmoji` is an installable Claude Code skill** — the repo is `charmoji-sticker-skill`, while
+the `name` in `SKILL.md` frontmatter is `charmoji` (a skill name need not match the repo name;
+Claude Code only reads the frontmatter `name`). Clone it into `~/.claude/skills/` and Claude Code
+picks it up; say "help me make a set of WeChat stickers" to trigger. Commands and deps: see
+[Install](#install).
 
 The name is `char` (character IP) + `moji` (what it says for you): stickers speak for the character — [source](CHANGELOG.md).
 
@@ -96,7 +98,7 @@ GIF only supports 1-bit transparency (each pixel is fully transparent or fully o
 ## Install
 
 ```bash
-git clone https://github.com/webkubor/charmoji.git \
+git clone https://github.com/webkubor/charmoji-sticker-skill.git \
   ~/.claude/skills/charmoji
 ```
 

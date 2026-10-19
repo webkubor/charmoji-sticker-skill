@@ -72,7 +72,7 @@ SKILL_DIR=~/.claude/skills/charmoji
 指向 `albums/` 的软链，Finder 里照样浏览。可用 `STICKER_HOME` / `STICKER_ALBUMS` 覆盖。
 
 **代码也只有一份**：这个 skill 目录本身就是 git 仓库
-（`github.com/webkubor/charmoji`），`~/dev/github/agent/charmoji`
+（`github.com/webkubor/charmoji-sticker-skill`），`~/dev/github/agent/charmoji`
 是指向它的软链。早先是两份副本靠手动 rsync 同步，结果漂了 8 个文件才发现。
 ⚠️ Claude Code **不跟随 symlink 加载 skill**，所以真目录必须在 `~/.claude/skills/` 下，
 反过来做会导致 skill 直接消失。
