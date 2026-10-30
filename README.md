@@ -109,15 +109,41 @@ GIF 只有 1-bit 透明（每像素要么全透明要么全不透明），半透
 
 ## 安装
 
+先克隆本仓库，再从仓库根目录运行安装脚本（默认软链，改源码即时生效）：
+
+```bash
+git clone https://github.com/webkubor/charmoji-sticker-skill.git
+cd charmoji-sticker-skill
+./install.sh
+```
+
+脚本会自动识别本机已存在的运行时目录（Claude Code / Codex / ~/.agents / Gemini / DSH / Magpie），
+用软链把本仓库挂进去；若已安装 Hermes，也会接入其技能目录。常用选项：
+
+```bash
+./install.sh --list              # 只看会装到哪，不改任何文件
+./install.sh --target claude     # 只装到 Claude Code
+./install.sh --copy              # 拷贝而非软链（给不跟随软链的运行时用）
+./install.sh --uninstall         # 卸载（只清理本脚本自己装的那份）
+```
+
+想手动装也可以，仓库根目录就是 skill 入口：
+
 ```bash
 git clone https://github.com/webkubor/charmoji-sticker-skill.git \
   ~/.claude/skills/charmoji
 ```
 
+也可以用生态标准工具选择支持的 Agent 安装：
+
+```bash
+npx skills add webkubor/charmoji-sticker-skill
+```
+
 装完在 Claude Code 里说「帮我做一套微信表情」即可触发；也可以只当命令行工具用。
 
-> ⚠️ 必须 clone 到 `~/.claude/skills/` 下的**真目录**。Claude Code
-> **不跟随 symlink 加载 skill** —— 把真目录放别处、这里放软链会导致 skill 直接消失。
+> ℹ️ 软链（symlink）同样能被 Claude Code 正常加载 —— 装好后可用
+> `claude -p "列出你可用的 skill 名称"` 自查。
 
 ## 数据模型：形象唯一，系列多套
 

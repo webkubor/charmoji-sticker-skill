@@ -97,14 +97,26 @@ GIF only supports 1-bit transparency (each pixel is fully transparent or fully o
 
 ## Install
 
+Clone the repository, then run its bundled installer. It links the source into existing agent skill directories, so source edits take effect immediately:
+
+```bash
+git clone https://github.com/webkubor/charmoji-sticker-skill.git
+cd charmoji-sticker-skill
+./install.sh
+./install.sh --list            # preview destinations without changing files
+./install.sh --target claude   # install into Claude Code only
+./install.sh --copy            # copy files for runtimes that do not follow symlinks
+./install.sh --uninstall       # remove this install
+```
+
+The installer detects Claude Code, Codex, `~/.agents`, Gemini, DSH, Magpie and Hermes. You can also install manually:
+
 ```bash
 git clone https://github.com/webkubor/charmoji-sticker-skill.git \
   ~/.claude/skills/charmoji
 ```
 
-After install, say "help me make a set of WeChat stickers" in Claude Code to trigger; can also be used purely as a CLI tool.
-
-> ⚠️ Must clone into a **real directory** under `~/.claude/skills/`. Claude Code **does not follow symlinks for skill loading** — putting the real directory elsewhere and symlinking here makes the skill disappear.
+After install, say "help me make a set of WeChat stickers" in Claude Code to trigger; can also be used purely as a CLI tool. Claude Code 2.1.310 was verified to load this skill through a symlink.
 
 ## Data model: one character, many sets
 

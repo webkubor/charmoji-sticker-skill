@@ -1,0 +1,27 @@
+name: 安装器副本一致性
+
+# scripts/install_skill.py 是从规范源仓复制过来的，复制就会漂移：
+# 改了规范源忘了同步这个仓，安装行为就悄悄变成旧的 —— 没有报错、没有告警，
+# 只是「这个仓的技能装出来跟别的不一样」。
+#
+# 规范源 = webkubor/pr-contributor-skill/scripts/install_skill.py。
+# 当前版本的摘要随安装器副本一起提交；本机跨仓检查由 CortexOS 执行。
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  installer-copy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 校验安装器副本摘要
+        run: |
+          echo "846cee47e5ff16beb03c3de4fbc3fc22b70522900ea06e0565d576c6c3415af6  scripts/install_skill.py" | sha256sum -c -
