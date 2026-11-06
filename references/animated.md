@@ -186,8 +186,9 @@ reel make --template sticker-promo \
 
 ## 配乐来源
 
-配乐真源是 [`web-assets`](https://gitlab.com/webkubor/web-assets) 的
-`manifest/music.json` 的 `bgm` 段（本体在 R2，CDN `music.webkubor.online/bgm/`）。
+配乐真源是 CortexOS 的 [`docs/manifest/music.json`](https://gitlab.com/webkubor/CortexOS) 的
+`bgm` 段（本体在 R2，CDN `music.webkubor.online/bgm/`）。
+2026-10-28 起从原 `web-assets` 仓迁来 —— 那个仓已删除。
 `reel bgm` 看清单，`--bgm <别名>` 取用，**出片时会打印授权** ——
 片子要对外发，能不能商用必须当场看得见。
 

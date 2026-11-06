@@ -60,7 +60,7 @@ GitHub 上 star 数会从 `wechat-sticker-submit` 转移到 `charmoji`(GitHub re
 用法上的变化：
 
 - `--music` 现在收**配乐库别名**（默认「儿童轻快」，`reel bgm` 看清单），也仍接受本地路径。
-  配乐真源是 web-assets 的 `manifest/music.json`，出片时会打印授权。
+  配乐真源是 CortexOS `docs/manifest/music.json`，出片时会打印授权。
 - 新增 `--voice <音色>` 透传给 reel-kit 开配音；`--template` 换版式
 - 前置依赖从 museav 变成 reel-kit（`npm link` 一次）+ ffmpeg + Chrome
 
